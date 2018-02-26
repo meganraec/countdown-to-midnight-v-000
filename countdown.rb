@@ -1,8 +1,8 @@
 def countdown(number)
   while number > 0
-    countdown_output = $stdout.write "'#{number}' SECOND(S)!\n"
+    countdown_output = "'#{number}' SECOND(S)!\n"
     number -= 1
-    countdown_output
+    $stdout.write countdown_output
     break if number == 0
   end
   return "HAPPY NEW YEAR!"
