@@ -1,20 +1,20 @@
-def countdown(number)
-  while number > 0
-    countdown_output = "'#{number}' SECOND(S)!\n"
-    number -= 1
+def countdown(n)
+  while n > 0
+    countdown_output = "'#{n}' SECOND(S)!\n"
+    n -= 1
     $stdout.write countdown_output
-    break if number == 0
+    break if n == 0
   end
   return "HAPPY NEW YEAR!"
 end
 
-def countdown_with_sleep(number)
-  while number > 0
-    countdown_output = "'#{number}' SECOND(S)!\n"
+def countdown_with_sleep(n)
+  while n > 0
+    countdown_output = "'#{n}' SECOND(S)!\n"
     sleep(1)
-    number -= 1
+    n -= 1
     $stdout.write countdown_output
-    break if number == 0
+    break if n == 0
   end
   return "HAPPY NEW YEAR!"
 end
