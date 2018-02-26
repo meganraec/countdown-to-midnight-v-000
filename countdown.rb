@@ -10,7 +10,7 @@ end
 
 def countdown_with_sleep(number)
   while number > 0
-    countdown_output = '#{number} SECOND(S)!\n'
+    countdown_output = "'#{number}' SECOND(S)!\n"
     sleep(1)
     number -= 1
     $stdout.write countdown_output
